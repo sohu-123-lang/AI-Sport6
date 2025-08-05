@@ -89,7 +89,6 @@ If you use this work in your research, please cite:
 @article{confu2025,
   title={A Conditional Gating–Based Cross-Fusion Network for Pre-Stroke Drop Point Prediction in Badminton},
   author={Anonymous},
-  journal={AAAI 2026},
   year={2025}
 }
 ```
