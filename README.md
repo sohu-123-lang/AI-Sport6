@@ -7,7 +7,7 @@
 
 
 ## 🌟 Introduction
-Our Conditional Gate-Based Cross-Fusion Network (ConFu) is a novel multimodal framework that predicts badminton shuttlecock landing positions **300ms before stroke execution** by integrating:
+Our Conditional Gate-Based Cross-Fusion Network (ConFu) is a novel multimodal framework that predicts badminton shuttlecock landing positions **before stroke execution** by integrating:
 - 3D shuttlecock trajectory reconstruction
 - Player dynamic localization 
 - Keypoint-based arm gestures
