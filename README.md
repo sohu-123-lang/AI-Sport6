@@ -1,17 +1,10 @@
-Here's a professional, well-structured README.md file in Markdown format that combines your requirements with insights from the paper:
 
-```markdown
-# Conditional Gating-Based Cross-Fusion Network for Pre-Stroke Drop Point Prediction in Badminton
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch 1.12+](https://img.shields.io/badge/PyTorch-1.12+-red.svg)](https://pytorch.org/)
-
-![Network Architecture](4-ResultVisulization/architecture.png)
-
-This repository contains the official implementation of our paper:  
 **"A Conditional Gating–Based Cross-Fusion Network for Pre-Stroke Drop Point Prediction in Badminton"**  
 *(Currently under review at AAAI 2026)*
+
+## Demo Video
+![Demo GIF](./ResultSample.gif)
+
 
 ## 🌟 Introduction
 Our Conditional Gate-Based Cross-Fusion Network (ConFu) is a novel multimodal framework that predicts badminton shuttlecock landing positions **300ms before stroke execution** by integrating:
@@ -29,24 +22,6 @@ The model achieves **92.6% accuracy** (within 0.3m) and **97ms inference time**,
 | **Conditional Gating** | Dynamic feature recalibration via LSTM | 23% faster inference by suppressing noise |
 | **Spatio-Temporal Encoding** | Dual-branch transformer architecture | Captures both trajectory dynamics and court positioning |
 | **Early Prediction** | Forecasts at stroke moment (not post-trajectory) | Provides 1.25s decision time advantage |
-
-## 📂 Project Structure
-```
-├── 1-PrecessedResultFromTrackNetV2/    # Video processing scripts
-├── 2-Data/                             # Processed datasets
-│   ├── InputData/                      # Model inputs
-│   │   ├── X1                          # 3D shuttlecock trajectories 
-│   │   ├── X2                          # Player positions
-│   │   ├── X3                          # Arm keypoint features
-│   │   └── X4                          # Stroke type labels
-│   └── LabelData/                      # Ground truth
-│       └── label y                     # Landing coordinates
-├── 3-SourceCode-Train&Test/            # Main implementation
-│   ├── train.py                        # Training script
-│   └── test.py                         # Evaluation metrics
-├── 4-ResultVisulization/               # Visualization tools
-├── 5-Evaluation/                       # Performance analysis
-```
 
 ## 🔧 Data Processing
 
